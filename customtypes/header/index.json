@@ -21,10 +21,10 @@
           "thumbnails": []
         }
       },
-      "menuitem": {
+      "menuitems": {
         "type": "Link",
         "config": {
-          "label": "menuItem",
+          "label": "menuItems",
           "placeholder": "",
           "select": null,
           "allowTargetBlank": false,
