@@ -1,0 +1,89 @@
+{
+  "id": "important_projects",
+  "type": "SharedSlice",
+  "name": "ImportantProjects",
+  "description": "ImportantProjects",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "title",
+            "placeholder": ""
+          }
+        },
+        "subtitle": {
+          "type": "Text",
+          "config": {
+            "label": "subtitle",
+            "placeholder": ""
+          }
+        },
+        "backgroundcolor": {
+          "type": "Select",
+          "config": {
+            "label": "backgroundColor",
+            "placeholder": "",
+            "options": [
+              "light",
+              "dark"
+            ],
+            "default_value": "light"
+          }
+        },
+        "projects": {
+          "type": "Group",
+          "config": {
+            "label": "projects",
+            "repeat": true,
+            "fields": {
+              "project": {
+                "type": "Link",
+                "config": {
+                  "label": "project",
+                  "select": "document",
+                  "repeat": false,
+                  "customtypes": [
+                    {
+                      "id": "project",
+                      "fields": [
+                        "image",
+                        "description",
+                        "title",
+                        {
+                          "id": "service",
+                          "fields": [
+                            {
+                              "id": "service",
+                              "customtypes": [
+                                {
+                                  "id": "service",
+                                  "fields": [
+                                    "title"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        "city"
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
