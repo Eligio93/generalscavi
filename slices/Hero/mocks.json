@@ -42,15 +42,20 @@
 				"value": [
 					{
 						"__TYPE__": "LinkContent",
-						"key": "d5db2418-367e-4d77-bf4d-b811b0583283",
+						"key": "d077cc99-6b65-47b8-8312-b57aa67f95e1",
 						"value": {
 							"__TYPE__": "ExternalLink",
 							"url": "http://twitter.com",
-							"text": "happily",
-							"variant": "outline"
+							"text": "refused",
+							"variant": "secondary"
 						}
 					}
 				]
+			},
+			"size": {
+				"__TYPE__": "FieldContent",
+				"value": "small",
+				"type": "Select"
 			}
 		},
 		"items": []

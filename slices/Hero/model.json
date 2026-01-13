@@ -44,9 +44,22 @@
             "allowText": true,
             "repeat": true,
             "variants": [
-              "primary",
-              "outline"
+              "default",
+              "secondary"
             ]
+          }
+        },
+        "size": {
+          "type": "Select",
+          "config": {
+            "label": "size",
+            "placeholder": "",
+            "options": [
+              "small",
+              "medium",
+              "screen"
+            ],
+            "default_value": "small"
           }
         }
       },
