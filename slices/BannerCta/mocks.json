@@ -1,0 +1,39 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"backgroundColor": {
+				"__TYPE__": "FieldContent",
+				"value": "dark",
+				"type": "Select"
+			},
+			"anchortag": {
+				"__TYPE__": "FieldContent",
+				"value": "held",
+				"type": "Text"
+			},
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "newspaper",
+				"type": "Text"
+			},
+			"subtitle": {
+				"__TYPE__": "FieldContent",
+				"value": "announced",
+				"type": "Text"
+			},
+			"cta": {
+				"__TYPE__": "LinkContent",
+				"key": "a1ac05ba-059b-45f9-8510-14b83a13bfb0",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://google.com",
+					"text": "loose",
+					"variant": "Secondary"
+				}
+			}
+		},
+		"items": []
+	}
+]
