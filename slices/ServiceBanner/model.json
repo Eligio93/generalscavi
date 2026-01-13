@@ -1,0 +1,80 @@
+{
+  "id": "service_banner",
+  "type": "SharedSlice",
+  "name": "ServiceBanner",
+  "description": "ServiceBanner",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "anchortag": {
+          "type": "Text",
+          "config": {
+            "label": "anchorTag",
+            "placeholder": ""
+          }
+        },
+        "backgroundcolor": {
+          "type": "Select",
+          "config": {
+            "label": "backgroundColor",
+            "placeholder": "",
+            "options": [
+              "light",
+              "dark"
+            ],
+            "default_value": "light"
+          }
+        },
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "title",
+            "placeholder": ""
+          }
+        },
+        "subtitle": {
+          "type": "Text",
+          "config": {
+            "label": "subtitle",
+            "placeholder": ""
+          }
+        },
+        "services": {
+          "type": "Group",
+          "config": {
+            "label": "services",
+            "repeat": true,
+            "fields": {
+              "service": {
+                "type": "Link",
+                "config": {
+                  "label": "",
+                  "select": "document",
+                  "repeat": false,
+                  "customtypes": [
+                    {
+                      "id": "service",
+                      "fields": [
+                        "image",
+                        "title",
+                        "description",
+                        "cta"
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
