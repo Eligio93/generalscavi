@@ -1,10 +1,10 @@
 import { FC } from "react";
 import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
-import Wrapper from "@/app/components/Wrapper";
+import Wrapper from "@/components/Wrapper";
 import Certificazione from "@/public/Certificazione.jpg";
 import Image from "next/image";
-import SectionHeader from "@/app/components/SectionHeader";
+import SectionHeader from "@/components/SectionHeader";
 
 /**
  * Props for `CertificationsBanner`.

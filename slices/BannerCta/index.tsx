@@ -1,11 +1,11 @@
 import { FC } from "react";
 import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
-import Wrapper from "@/app/components/Wrapper";
-import PageSectionTitle from "@/app/components/PageSectionTitle";
-import PageSectionSubtitle from "@/app/components/PageSectionSubtitle";
+import Wrapper from "@/components/Wrapper";
+import PageSectionTitle from "@/components/PageSectionTitle";
+import PageSectionSubtitle from "@/components/PageSectionSubtitle";
 import Link from "next/link";
-import { Button } from "@/app/components/ui/button";
+import { Button } from "@/components/ui/button";
 
 /**
  * Props for `BannerCta`.

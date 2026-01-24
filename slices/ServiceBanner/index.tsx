@@ -1,10 +1,10 @@
 import { FC } from "react";
 import { Content, isFilled } from "@prismicio/client";
 import { PrismicImage, SliceComponentProps } from "@prismicio/react";
-import Wrapper from "@/app/components/Wrapper";
+import Wrapper from "@/components/Wrapper";
 import { PrismicNextLink } from "@prismicio/next";
-import RichTextRenderer from "@/app/components/RichTextRenderer";
-import SectionHeader from "@/app/components/SectionHeader";
+import RichTextRenderer from "@/components/RichTextRenderer";
+import SectionHeader from "@/components/SectionHeader";
 
 /**
  * Props for `ServiceBanner`.
