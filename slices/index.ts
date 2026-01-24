@@ -3,5 +3,13 @@
 import dynamic from "next/dynamic";
 
 export const components = {
+  all_services: dynamic(() => import("./AllServices")),
+  banner_cta: dynamic(() => import("./BannerCta")),
+  certifications_banner: dynamic(() => import("./CertificationsBanner")),
+  contacts_banner: dynamic(() => import("./ContactsBanner")),
   hero: dynamic(() => import("./Hero")),
+  important_projects: dynamic(() => import("./ImportantProjects")),
+  projects: dynamic(() => import("./Projects")),
+  service_banner: dynamic(() => import("./ServiceBanner")),
+  stepper: dynamic(() => import("./Stepper")),
 };
