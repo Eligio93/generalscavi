@@ -20,7 +20,8 @@ export const repositoryName =
 // TODO: Update the routes array to match your project's route structure.
 const routes: Route[] = [
   { type: "homepage", path: "/" },
-  // { type: "page", path: "/:uid" },
+  { type: "webpage", path: "/:uid" },
+  { type: "projectpage", path: "/progetti/:uid" },
   // Add routes here as you create Custom Types in Prismic
 ];
 
