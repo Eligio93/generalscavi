@@ -56,10 +56,6 @@ const ServiceBanner: FC<ServiceBannerProps> = ({ slice }) => {
                         <RichTextRenderer
                           richText={service.data?.description}
                         />
-                        <PrismicNextLink
-                          field={service.data?.cta}
-                          className="w-full px-4 py-1 bg-primary rounded-full text-center font-bold text-lg"
-                        />
                       </div>
                     </div>
                   </div>

@@ -608,23 +608,6 @@ interface ServiceDocumentData {
    * - **Documentation**: https://prismic.io/docs/fields/rich-text
    */
   description: prismic.RichTextField;
-
-  /**
-   * cta field in *Service*
-   *
-   * - **Field Type**: Link
-   * - **Placeholder**: *None*
-   * - **API ID Path**: service.cta
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/fields/link
-   */
-  cta: prismic.LinkField<
-    string,
-    string,
-    unknown,
-    prismic.FieldState,
-    "default" | "secondary"
-  >;
 }
 
 /**
