@@ -1,0 +1,87 @@
+{
+  "id": "contacts_banner",
+  "type": "SharedSlice",
+  "name": "ContactsBanner",
+  "description": "ContactsBanner",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "title",
+            "placeholder": ""
+          }
+        },
+        "subtitle": {
+          "type": "Text",
+          "config": {
+            "label": "subtitle",
+            "placeholder": ""
+          }
+        },
+        "backgroundimage": {
+          "type": "Image",
+          "config": {
+            "label": "backgroundImage",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "phone": {
+          "type": "Text",
+          "config": {
+            "label": "phone",
+            "placeholder": ""
+          }
+        },
+        "email": {
+          "type": "Text",
+          "config": {
+            "label": "email",
+            "placeholder": ""
+          }
+        },
+        "social": {
+          "type": "Link",
+          "config": {
+            "label": "social",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": true
+          }
+        },
+        "formtitle": {
+          "type": "Text",
+          "config": {
+            "label": "formTitle",
+            "placeholder": ""
+          }
+        },
+        "contacttitle": {
+          "type": "Text",
+          "config": {
+            "label": "contactTitle",
+            "placeholder": ""
+          }
+        },
+        "socialtitle": {
+          "type": "Text",
+          "config": {
+            "label": "socialTitle",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
