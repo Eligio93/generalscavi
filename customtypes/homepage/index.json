@@ -18,6 +18,18 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "banner_cta": {
+              "type": "SharedSlice"
+            },
+            "important_projects": {
+              "type": "SharedSlice"
+            },
+            "certifications_banner": {
+              "type": "SharedSlice"
+            },
+            "service_banner": {
+              "type": "SharedSlice"
+            },
             "hero": {
               "type": "SharedSlice"
             }

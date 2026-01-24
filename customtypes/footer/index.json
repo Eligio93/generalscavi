@@ -1,0 +1,79 @@
+{
+  "format": "custom",
+  "id": "footer",
+  "label": "Footer",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "backgroundimage": {
+        "type": "Image",
+        "config": {
+          "label": "backgroundImage",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "logo": {
+        "type": "Image",
+        "config": {
+          "label": "logo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "companydescription": {
+        "type": "Text",
+        "config": {
+          "label": "companyDescription",
+          "placeholder": ""
+        }
+      },
+      "navigazione": {
+        "type": "Link",
+        "config": {
+          "label": "navigazione",
+          "placeholder": "",
+          "select": null,
+          "allowTargetBlank": false,
+          "allowText": true,
+          "repeat": true
+        }
+      },
+      "social": {
+        "type": "Link",
+        "config": {
+          "label": "social",
+          "placeholder": "",
+          "select": null,
+          "allowTargetBlank": false,
+          "allowText": true,
+          "repeat": true
+        }
+      },
+      "contatti": {
+        "type": "Group",
+        "config": {
+          "label": "contatti",
+          "repeat": false,
+          "fields": {
+            "phone": {
+              "type": "Text",
+              "config": {
+                "label": "phone",
+                "placeholder": ""
+              }
+            },
+            "mail": {
+              "type": "Text",
+              "config": {
+                "label": "mail",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
