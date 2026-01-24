@@ -8,6 +8,10 @@ export default function Wrapper({
   className?: string;
 }) {
   return (
-    <div className={`container mx-auto max-w-6xl ${className}`}>{children}</div>
+    <div
+      className={` ${className} mx-auto max-w-7xl py-12 xl:py-18 flex flex-col gap-12 xl:gap-16 px-2 xl:px-0`}
+    >
+      {children}
+    </div>
   );
 }
