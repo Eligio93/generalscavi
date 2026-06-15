@@ -38,6 +38,7 @@ const AllServices: FC<AllServicesProps> = ({ slice }) => {
                   <PrismicNextImage
                     field={service?.image}
                     fill
+                    fallbackAlt=""
                     className="object-cover"
                   />
                 </div>

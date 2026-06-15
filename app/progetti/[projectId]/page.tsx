@@ -68,7 +68,7 @@ export default async function ProjectPage({
           <PageSectionTitle title="Video del progetto" />
           <video
             src={project.data.video.url}
-            className="w-full h-[300px] lg:h-[500px] object-cover rounded-lg"
+            className="w-full h-[300px] lg:h-[600px] object-contain rounded-lg"
             controls
           />
         </div>
@@ -78,7 +78,7 @@ export default async function ProjectPage({
           <PageSectionTitle title="Photo Gallery" />
           <PhotoGallery
             slides={project.data.gallery.map(
-              (galleryItem) => galleryItem.picture
+              (galleryItem) => galleryItem.picture,
             )}
           />
         </div>

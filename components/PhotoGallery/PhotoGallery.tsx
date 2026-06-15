@@ -21,7 +21,7 @@ export const Thumb: React.FC<ThumbProps> = ({ selected, image, onClick }) => {
           "rounded-lg  cursor-pointer p-0 m-0",
           "flex items-center justify-center aspect-square w-full",
           " touch-manipulation",
-          selected ? "border border-foreground rounded-lg" : ""
+          selected ? "border border-foreground rounded-lg" : "",
         )}
       >
         <PrismicImage
@@ -46,7 +46,7 @@ export default function PhotoGallery({ slides }: { slides: ImageField[] }) {
       if (!emblaMainApi || !emblaThumbsApi) return;
       emblaMainApi.scrollTo(index);
     },
-    [emblaMainApi, emblaThumbsApi]
+    [emblaMainApi, emblaThumbsApi],
   );
 
   const onSelect = useCallback(() => {
@@ -70,10 +70,10 @@ export default function PhotoGallery({ slides }: { slides: ImageField[] }) {
               key={index}
               className="flex-[0_0_100%] min-w-0 pl-4 translate-x-0"
             >
-              <div className="rounded-lg flex items-center justify-center h-76 xl:h-[500px] select-none">
+              <div className="rounded-lg flex items-center justify-center h-76 md:h-[500px] xl:h-[700px] select-none">
                 <PrismicImage
                   field={image}
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-contain rounded-lg"
                 />
               </div>
             </div>

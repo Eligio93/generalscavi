@@ -24,7 +24,7 @@ export type ImportantProjectsProps =
 const ImportantProjects: FC<ImportantProjectsProps> = ({ slice }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { loop: true, align: "start" },
-    [Autoplay()]
+    [Autoplay()],
   );
 
   return (
@@ -39,6 +39,7 @@ const ImportantProjects: FC<ImportantProjectsProps> = ({ slice }) => {
           bgColor={slice.primary.backgroundcolor}
         />
         <div className="flex flex-col gap-5">
+          {/**CAROUSEL CONTROLS */}
           <div className="flex justify-end gap-4">
             <button onClick={() => emblaApi?.scrollPrev()}>
               <CircleChevronLeft className="size-8" />
@@ -48,8 +49,6 @@ const ImportantProjects: FC<ImportantProjectsProps> = ({ slice }) => {
             </button>
           </div>
           <div className="embla overflow-hidden" ref={emblaRef}>
-            {/**CAROUSEL CONTROLS */}
-
             <div className="embla__container flex ">
               {slice.primary.projects.map((item) => {
                 if (!isFilled.contentRelationship(item.project)) {

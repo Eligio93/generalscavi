@@ -16,6 +16,7 @@ export default async function Header() {
         <div className="flex items-center justify-between px-5 py-2 h-full bg-background/50 rounded-lg backdrop-blur-md max-w-7xl mx-auto">
           <PrismicNextImage
             field={header.data.logo}
+            fallbackAlt=""
             className="h-full w-auto"
           />
           <nav>

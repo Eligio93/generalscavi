@@ -2,9 +2,8 @@ import { FC } from "react";
 import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 import Wrapper from "@/components/Wrapper";
-import Certificazione from "@/public/Certificazione.jpg";
-import Image from "next/image";
 import SectionHeader from "@/components/SectionHeader";
+import { PrismicNextImage } from "@prismicio/next";
 
 /**
  * Props for `CertificationsBanner`.
@@ -32,21 +31,16 @@ const CertificationsBanner: FC<CertificationsBannerProps> = ({ slice }) => {
           bgColor={slice.primary.backgroundcolor}
         />
         <div className="flex justify-evenly flex-wrap gap-10">
-          <Image
-            src={Certificazione}
-            alt="Certificazione"
-            className="h-40 w-auto"
-          />
-          <Image
-            src={Certificazione}
-            alt="Certificazione"
-            className="h-40 w-auto"
-          />
-          <Image
-            src={Certificazione}
-            alt="Certificazione"
-            className="h-40 w-auto"
-          />
+          {slice.primary.certifications.map((certification, index) => {
+            return (
+              <PrismicNextImage
+                key={index}
+                field={certification.image}
+                fallbackAlt=""
+                className="h-40 w-auto"
+              />
+            );
+          })}
         </div>
       </Wrapper>
     </section>

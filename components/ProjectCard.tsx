@@ -33,15 +33,16 @@ export default function ProjectCard({
   project: ProjectCardProps;
 }) {
   return (
-    <div className="embla__slide flex-[0_0_100%] md:flex-[0_0_45%] lg:flex-[0_0_30%] min-w-0 mr-10 shadow-lg">
+    <div className="embla__slide flex-[0_0_100%] md:flex-[0_0_45%] lg:flex-[0_0_30%] min-w-0 mr-10 shadow-lg ">
       <div>
         <PrismicNextImage
           field={project.data?.image}
+          fallbackAlt=""
           className="w-full h-64 object-cover rounded-t-lg"
         />
       </div>
-      <div className="flex flex-col gap-3 px-2 py-4 bg-white rounded-b-lg">
-        <div className="flex justify-between items-center ">
+      <div className="flex flex-col gap-3 px-2 py-4 bg-white rounded-b-lg h-80">
+        <div className="flex justify-between items-center">
           {isFilled.contentRelationship(project.data?.service[0]?.service) && (
             <Badge variant="default">
               {project.data?.service[0]?.service.data?.title}
@@ -52,8 +53,8 @@ export default function ProjectCard({
             <p className="text-sm text-gray-500">{project.data?.city}</p>
           </div>
         </div>
-        <div className="flex flex-col gap-2">
-          <h3 className="uppercase font-bold font-michroma">
+        <div className="flex flex-col gap-2 flex-1">
+          <h3 className="uppercase font-bold font-michroma ">
             {project.data?.title}
           </h3>
           <p className="line-clamp-5">{project.data?.description}</p>

@@ -32,14 +32,16 @@ const Hero: FC<HeroProps> = ({ slice, context }) => {
       <div className="h-full w-full relative flex justify-center items-center p-3">
         <PrismicNextImage
           field={slice.primary.backgroundimage}
+          fallbackAlt=""
           className="absolute w-full h-full object-cover"
         />
         <div
-          className={`mx-auto bg-foreground/20 min-h-56 z-20 flex flex-col gap-5 xl:gap-8 items-center justify-center p-2 md:p-3  lg:p-5 xl:p-10  ${isHomePage ? "backdrop-blur-xl rounded-lg" : "absolute w-full h-full bg-foreground/70"}`}
+          className={`mx-auto bg-foreground/20 min-h-56 z-20 flex flex-col gap-5 xl:gap-8 items-center justify-center p-2 md:p-3  lg:p-5 xl:p-10  ${isHomePage ? "backdrop-blur-sm rounded-lg" : "absolute w-full h-full bg-foreground/70"}`}
         >
           {slice.primary.logo && (
             <PrismicNextImage
               field={slice.primary.logo}
+              fallbackAlt=""
               className="xl:h-25 h-15 md:h-20 w-auto"
             />
           )}
